@@ -1,0 +1,9 @@
+services:
+  landscaper-demo:
+    build: .
+    container_name: builder-demo
+    ports:
+      - "9350:80"
+    volumes:
+      - ./docs:/usr/share/nginx/html
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
