@@ -1,7 +1,6 @@
 services:
-  landscaper-demo:
+  builder-demo:
     build: .
-    container_name: builder-demo
     ports:
       - "9350:80"
     volumes:
