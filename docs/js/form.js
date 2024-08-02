@@ -18,7 +18,7 @@
 
     let origin = window.origin;
     if (origin.includes("github")) {
-      origin = "https://ddgroleau.github.io/landscaper-demo";
+      origin = "https://ddgroleau.github.io/builder-demo";
     }
     hiddenInput2.setAttribute("value", origin + "/thank-you");
 
