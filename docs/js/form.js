@@ -15,7 +15,12 @@
     const hiddenInput2 = document.createElement("input");
     hiddenInput2.setAttribute("type", "hidden");
     hiddenInput2.setAttribute("name", "redirect");
-    hiddenInput2.setAttribute("value", window.origin + "/thank-you");
+
+    let origin = window.origin;
+    if (origin.includes("github")) {
+      origin = "https://ddgroleau.github.io/landscaper-demo";
+    }
+    hiddenInput2.setAttribute("value", origin + "/thank-you");
 
     form.appendChild(hiddenInput2);
   }
